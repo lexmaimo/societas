@@ -1,0 +1,568 @@
+@media (max-width: 1600px) {
+    .banner {
+        padding-bottom: 0;
+        .carousel-item {
+            height: 50vw;
+        }
+    }
+    .about {
+        grid-template-rows: 20px 50px 85% 20px;
+        padding-top: 100px;
+        .item3 {
+            font-size: 16px;
+        }
+        .btn-dest {
+            a {
+                @include title (unset, center, 10px, $tipografia-principal, normal, 16px);
+            }
+        }
+    }
+    .reviews {
+        .comentarios {
+            .opinion1, .opinion2 {
+                .text-comment {
+                    font-size: 16px;
+                }
+                .caja-comentario {
+                    .caja-texto {
+                        .texto1 {
+                            font-size: 16px;
+                        }
+                        .texto2 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services {
+        .img-services {
+            width: 85vw;
+        }
+        .text-services {
+            width: 85vw;
+            font-size: 16px;
+        }
+        .cajas-servicios {
+            width: 100vw;            
+            .caja1, .caja2, .caja3, .caja4 {
+                width: 21.25vw;
+            }
+        }
+    }
+    .contact {
+        .container_contacto {
+            .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
+                font-size: 16px;
+            }
+            .btn-send {
+                font-size: 16px;
+            }
+            .form-label {
+                font-size: 16px;
+            }
+        }
+    }
+    footer {
+        .info_footer {
+            .contactos_footer {
+                width: 180px;
+                h3, p {
+                    font-size: 16px;
+                }
+            }
+            .logo_footer {
+                img {
+                    @include medidas (200px, auto);
+                }
+            }
+            .contactos_footer2 {
+                width: 180px;
+                h3, p, a {
+                    font-size: 16px;
+                }
+            }
+        }
+        .derechos {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .banner {
+        .carousel-item {
+            height: 50vw;
+        }
+    }
+    .about {
+        grid-template-rows: 20px 50px 80% 20px;
+        .item3 {
+            font-size: 14px;
+        }
+        .btn-dest {
+            a {
+                @include title (unset, center, 10px, $tipografia-principal, normal, 14px);
+            }
+        }
+    }
+    .reviews {
+        .comentarios {
+            .opinion1, .opinion2 {
+                .text-comment {
+                    font-size: 14px;
+                }
+                .caja-comentario {
+                    .caja-texto {
+                        .texto1 {
+                            font-size: 14px;
+                        }
+                        .texto2 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services {
+        .img-services {
+            width: 80vw;
+        }
+        .text-services {
+            width: 80vw;
+            font-size: 14px;
+        }
+        .cajas-servicios {
+            width: 95vw;            
+            .caja1, .caja2, .caja3, .caja4 {
+                width: 20vw;
+            }
+        }
+    }
+    .contact {
+        .container_contacto {
+            .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
+                font-size: 14px;
+            }
+            .btn-send {
+                font-size: 14px;
+            }
+            .form-label {
+                font-size: 14px;
+            }
+        }
+    }
+    footer {
+        .info_footer {
+            .contactos_footer {
+                width: 195px;
+                h3, p {
+                    font-size: 14px;
+                }
+            }
+            .logo_footer {
+                img {
+                    @include medidas (150px, auto);
+                }
+            }
+            .contactos_footer2 {
+                width: 195px;
+                h3, p, a {
+                    font-size: 14px;
+                }
+            }
+        }
+        .derechos {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .banner {
+        padding-bottom: 0;
+    }
+    .about {
+        grid-template-rows: 20px 50px 86% 20px;
+        padding-top: 90px;
+    }
+    .services {
+        .img-services {
+            width: 85vw;
+        }
+        .text-services {
+            width: 85vw;
+        }
+        .cajas-servicios {
+            width: 95vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                width: 21.25vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .about {
+        grid-template-rows: 20px 50px 86% 20px;
+        .item3 {
+            font-size: 16px;
+        }
+        .btn-dest {
+            a {
+                @include title (unset, center, 10px, $tipografia-principal, normal, 14px);
+            }
+        }
+    }
+    .reviews {
+        .comentarios {
+            .opinion1, .opinion2 {
+                .text-comment {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .services {
+        .img-services {
+            width: 90vw;
+        }
+        .text-services {
+            width: 90vw;
+            font-size: 16px;
+        }
+        .cajas-servicios {
+            width: 95vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                @include medidas (22.5vw, auto);
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .contact {
+        .container_contacto {
+            .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
+                width: 50vw;
+            }
+            .btn-send {
+                font-size: 14px;
+            }            
+            .form-label {
+                font-size: 14px;
+            }
+        }
+    }
+    .politicas {
+        .caja_politicas {
+            grid-template-areas:
+            "titulo titulo"
+            "politicas1 politicas2"
+            "politicas1 ."
+            ;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding-bottom: 0;
+        .carousel-item {
+            height: 50vw;
+        }
+    }
+    .about {
+        grid-template-columns: 90vw;
+        grid-template-rows: 20px 50px 1fr 0.75fr 20px;
+        grid-template-areas:
+        "mini"
+        "titulo"
+        "texto"
+        "imagen"
+        "boton"
+        ;
+        padding-top: 50px;
+        padding-bottom: 90px;
+        justify-content: center;
+        .item3 {
+            width: 90vw;
+            height: auto;
+        }
+        .item4 {
+            width: 90vw;
+        }
+        .btn-dest {
+            margin-top: 25px;
+        }
+    }
+    .reviews {
+        .comentarios {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            .opinion1, .opinion2 {
+                @include medidas (52.5%, 50%);
+            }
+        }
+    }
+    .services {
+        .cajas-servicios {
+            gap: 10px;
+            .caja1, .caja2, .caja3, .caja4 {
+                @include medidas (35vw, auto);
+            }
+        }
+    }
+    .contact {
+        .container_contacto {
+            .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
+                width: 50vw;
+            }
+        }
+    }
+    .politicas {
+        .caja_politicas {
+            width: 100vw;
+            grid-template-areas:
+            "titulo titulo"
+            "politicas1 politicas2"
+            "politicas1 ."
+            ;
+        }
+    }
+    footer {
+        .info_footer {
+            .contactos_footer {
+                width: 180px;
+            }
+            .contactos_footer2 {
+                width: 180px;
+            }
+        }
+        .derechos {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding-bottom: 0;
+        .carousel-item {
+            height: 50vw;
+        }
+    }
+    .about {
+        grid-template-columns: 90vw;
+        grid-template-rows: 20px 30px 1fr 20px;
+        grid-template-areas:
+        "mini"
+        "titulo"
+        "texto"
+        "boton"
+        ;
+        padding-bottom: 50px;
+        justify-content: center;
+        background-color: $color-secundario;
+        .item1 {
+            font-size: 10px;
+            color: $color-boton;
+            letter-spacing: 2px;
+        }
+        .item2 {
+            font-size: 18px;
+            color: $color-principal;
+        }
+        .item3 {
+            width: 90vw;
+            height: auto;
+            color: $color-principal;
+            font-size: 14px;
+            padding: 20px 30px 10px 30px;
+        }
+        .item4 {
+            display: none;
+        }
+        .btn-dest {
+            margin-top: 0;
+            a {
+                color: $color-secundario;
+            }
+        }
+    }
+    .reviews {
+        display: none;
+    }
+    .services {
+        background-color: rgba(215, 210, 210, 0.397);
+        padding-bottom: 50px;
+        h2 {
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .img-services {
+            width: 80%;
+            height: 250px;
+            margin-bottom: 30px;
+        }
+        .text-services {
+            width: 80vw;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .cajas-servicios {
+            @include medidas (80vw, auto);
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            .caja1, .caja2, .caja3, .caja4 {
+                @include medidas (80vw, auto);
+                h3 {
+                    font-size: 16px;
+                }
+                li {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+    .projects {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 10px;
+        }
+        h3 {
+            padding: 0px 20px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .caja-proyectos {
+            flex-flow: column;
+            align-items: center;
+            figure {
+                @include medidas (280px, 180px);
+                    .capa {
+                        h3 {
+                            font-size: 16px;
+                            padding: 20px 45px 0px 45px;
+                        }
+                        a {
+                            display: none;
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 1.5;
+                            max-width: 180px;
+                            padding: 0px;
+                        }
+                    }
+                &:hover > .capa h3 {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .container_contacto {
+            flex-flow: column;
+            align-items: center;
+            .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
+                width: 80vw;
+                font-size: 12px;
+            }
+            .btn-send {
+                font-size: 12px;
+            }
+            .info_contacto {
+                display: none;
+            }
+            .form-label {
+                font-size: 12px;
+            }
+        }
+    }
+    .politicas {
+        .caja_politicas {
+            width: 100vw;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3);
+            grid-template-areas:
+            "titulo"
+            "politicas1"
+            "politicas2"
+            ;
+            h1 {
+                grid-area: titulo;
+                font-size: 24px;
+                padding: 40px 0px 0px 40px;
+            }
+            .container_politicas {
+                grid-area: politicas1;
+                padding-bottom: 30px;
+            }
+            .container_politicas2 {
+                grid-area: politicas2;
+                padding-top: 0px;
+            }
+            .container_politicas, .container_politicas2 {
+                h2 {
+                    font-size: 16px;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    footer {
+        .info_footer {
+            flex-flow: column;
+            justify-content: center;
+            .contactos_footer {
+                width: 100%;
+                text-align: center;
+                h3, p {
+                    font-size: 12px;
+                }
+            }
+            .logo_footer {
+                justify-content: center;
+                img {
+                    @include medidas (150px, auto);
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                }
+            }
+            .contactos_footer2 {
+                width: 100%;
+                text-align: center;
+                h3, p, a {
+                    font-size: 12px;
+                }
+            }
+        }
+        .derechos {
+            font-size: 10px;
+        }
+    }
+}

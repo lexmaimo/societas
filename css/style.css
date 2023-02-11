@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.nav {
+  background-color: #002B51; }
+  .nav .navBar {
+    justify-content: flex-end; }
+  .nav .burgerMenu {
+    background-color: #FCEDE1; }
+  .nav a {
+    font-family: "Roboto", sans-serif;
+    color: #FCEDE1; }
+    .nav a:hover {
+      color: #AC3520; }
+
+/* banner section */
+.banner {
+  padding-bottom: 50px;
+  background-color: #FCEDE1; }
+  .banner .carousel-item {
+    height: 550px; }
+
+/* about section */
+.about {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 50px 440px 20px;
+  grid-template-areas: "mini ." "titulo ." "texto imagen" "boton .";
+  padding-top: 50px;
+  padding-bottom: 125px;
+  background-color: #FCEDE1; }
+  .about .item1 {
+    width: 100%;
+    grid-area: mini;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    color: #AC3520;
+    letter-spacing: 2px; }
+  .about .item2 {
+    width: 100%;
+    grid-area: titulo;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #002B51; }
+  .about .item3 {
+    grid-area: texto;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #002B51;
+    padding: 30px; }
+  .about .item4 {
+    grid-area: imagen;
+    width: 95%;
+    height: 100%;
+    /*
+        background-size: cover;
+        background-position: center;
+        background-image: url();*/
+    background-color: #AC3520; }
+  .about .btn-dest {
+    grid-area: boton;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 30px; }
+    .about .btn-dest a {
+      width: unset;
+      text-align: center;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      text-decoration: none;
+      color: #FCEDE1;
+      background-color: #AC3520; }
+      .about .btn-dest a:hover {
+        background-color: #002B51; }
+
+/* reviews section */
+.reviews {
+  background-color: #002B51;
+  color: #FCEDE1;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .reviews h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 11px;
+    color: #AC3520;
+    letter-spacing: 2px; }
+  .reviews h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 24px; }
+  .reviews .comentarios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
+      width: 35%;
+      height: 35%;
+      padding: 25px;
+      background-color: #FCEDE1;
+      border-radius: 20px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+      .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: #002B51; }
+      .reviews .comentarios .opinion1 .caja-comentario, .reviews .comentarios .opinion2 .caja-comentario {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        padding-top: 10px;
+        align-items: center; }
+        .reviews .comentarios .opinion1 .caja-comentario .img-opinion, .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-size: cover;
+          background-position: center;
+          background-image: url(../assets/img/avatar3.jpg); }
+        .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
+          background-image: url(../assets/img/avatar4.jpg); }
+        .reviews .comentarios .opinion1 .caja-comentario .caja-texto, .reviews .comentarios .opinion2 .caja-comentario .caja-texto {
+          display: flex;
+          flex-flow: column; }
+          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #AC3520;
+            margin-bottom: 0; }
+          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #002B51;
+            margin-bottom: 0; }
+
+/* services section */
+.services {
+  background-color: #FCEDE1;
+  color: #002B51;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  .services h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 11px;
+    color: #AC3520;
+    letter-spacing: 2px; }
+  .services h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 30px; }
+  .services .img-services {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url();
+    background-color: #AC3520;
+    margin-bottom: 50px; }
+  .services .text-services {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; }
+  .services .cajas-servicios {
+    width: 95vw;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: auto; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 20vw;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #002B51;
+      padding-bottom: 15px; }
+      .services .cajas-servicios .caja1 img, .services .cajas-servicios .caja2 img, .services .cajas-servicios .caja3 img, .services .cajas-servicios .caja4 img {
+        width: 80px;
+        height: 80px; }
+        .services .cajas-servicios .caja1 img:hover, .services .cajas-servicios .caja2 img:hover, .services .cajas-servicios .caja3 img:hover, .services .cajas-servicios .caja4 img:hover {
+          -webkit-animation: rotate-center 1s ease-in-out both;
+          animation: rotate-center 1s ease-in-out both;
+          animation-name: rotate-center; }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+      .services .cajas-servicios .caja1 h3, .services .cajas-servicios .caja2 h3, .services .cajas-servicios .caja3 h3, .services .cajas-servicios .caja4 h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #FCEDE1; }
+      .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #FCEDE1;
+        text-align: center;
+        line-height: 2;
+        list-style: none; }
+    .services .cajas-servicios .caja2 {
+      background-color: #224C70; }
+    .services .cajas-servicios .caja3 {
+      background-color: #2C6291; }
+    .services .cajas-servicios .caja4 {
+      background-color: #3373AB; }
+
+/* projects section */
+.projects {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #002B51;
+  color: #FCEDE1;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  .projects h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 11px;
+    color: #AC3520;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .projects h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 50px; }
+  .projects .caja-proyectos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px; }
+    .projects .caja-proyectos figure {
+      width: 350px;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+      .projects .caja-proyectos figure img {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      .projects .caja-proyectos figure .capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #AC3520;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        .projects .caja-proyectos figure .capa h3 {
+          font-size: 18px;
+          padding: 20px 65px;
+          color: #FCEDE1;
+          font-family: "Roboto", sans-serif;
+          font-weight: bold;
+          transition: all 500ms ease-out; }
+        .projects .caja-proyectos figure .capa a {
+          background-color: transparent;
+          border: #002B51 solid;
+          text-decoration: none;
+          color: #002B51;
+          padding: 10px 15px;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px; }
+          .projects .caja-proyectos figure .capa a:hover {
+            color: #FCEDE1;
+            background-color: #002B51;
+            transition: all 500ms ease-out; }
+        .projects .caja-proyectos figure .capa p {
+          width: 100%;
+          text-align: center;
+          padding: 30px 20px;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+          font-size: 14px;
+          color: #FCEDE1;
+          line-height: 1.5;
+          max-width: 250px;
+          margin: auto;
+          transition: all 500ms ease-out;
+          margin-top: 0; }
+      .projects .caja-proyectos figure:hover > .capa {
+        opacity: 1;
+        visibility: visible; }
+      .projects .caja-proyectos figure:hover > .capa h3 {
+        margin-top: 20px; }
+
+/* contact section */
+.contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FCEDE1;
+  color: #002B51; }
+  .contact h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 11px;
+    color: #AC3520;
+    letter-spacing: 2px; }
+  .contact h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 50px; }
+  .contact .container_contacto {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: #FCEDE1; }
+    .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+      width: 35vw;
+      margin-bottom: 15px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
+    .contact .container_contacto .mensaje {
+      resize: none; }
+    .contact .container_contacto .btn-send {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: #FCEDE1;
+      border-radius: 0;
+      background-color: #AC3520;
+      border-color: #AC3520; }
+      .contact .container_contacto .btn-send:hover {
+        background-color: #002B51; }
+    .contact .container_contacto .info_contacto h3 {
+      font-family: "Roboto", sans-serif;
+      text-align: left;
+      padding-bottom: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #002B51; }
+    .contact .container_contacto .info_contacto p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #002B51; }
+    .contact .container_contacto .form-label {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
+
+.politicas {
+  margin: auto;
+  background-color: #FCEDE1;
+  color: #002B51;
+  font-family: "Roboto", sans-serif; }
+  .politicas .caja_politicas {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(3);
+    grid-template-areas: "titulo ." "politicas1 politicas2" "politicas1 ."; }
+    .politicas .caja_politicas h1 {
+      grid-area: titulo;
+      font-size: 36px;
+      padding: 40px; }
+    .politicas .caja_politicas .container_politicas {
+      grid-area: politicas1; }
+    .politicas .caja_politicas .container_politicas2 {
+      grid-area: politicas2; }
+    .politicas .caja_politicas .container_politicas, .politicas .caja_politicas .container_politicas2 {
+      padding: 40px; }
+      .politicas .caja_politicas .container_politicas h2, .politicas .caja_politicas .container_politicas2 h2 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px; }
+      .politicas .caja_politicas .container_politicas p, .politicas .caja_politicas .container_politicas2 p {
+        font-size: 16px; }
+
+footer {
+  background-color: #002B51;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px; }
+  footer .info_footer {
+    width: 80vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 35px;
+    color: #FCEDE1; }
+    footer .info_footer .contactos_footer {
+      width: 175px; }
+      footer .info_footer .contactos_footer h3, footer .info_footer .contactos_footer p {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px; }
+    footer .info_footer .logo_footer {
+      display: flex;
+      align-items: center; }
+      footer .info_footer .logo_footer img {
+        width: 150px;
+        height: auto; }
+    footer .info_footer .contactos_footer2 {
+      width: 195px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      text-align: right; }
+      footer .info_footer .contactos_footer2 h3, footer .info_footer .contactos_footer2 p {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px; }
+      footer .info_footer .contactos_footer2 a {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: #FCEDE1;
+        margin-bottom: 5px; }
+        footer .info_footer .contactos_footer2 a:hover {
+          color: #AC3520; }
+  footer hr {
+    background-color: #FCEDE1;
+    width: 80vw;
+    height: 2px; }
+  footer .derechos {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #FCEDE1; }
+  footer a {
+    text-decoration: none; }
+    footer a:hover {
+      color: #AC3520; }
+
+@media (max-width: 1600px) {
+  .banner {
+    padding-bottom: 0; }
+    .banner .carousel-item {
+      height: 50vw; }
+  .about {
+    grid-template-rows: 20px 50px 85% 20px;
+    padding-top: 100px; }
+    .about .item3 {
+      font-size: 16px; }
+    .about .btn-dest a {
+      width: unset;
+      text-align: center;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 16px; }
+  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+    font-size: 16px; }
+  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
+    font-size: 16px; }
+  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
+    font-size: 14px; }
+  .services .img-services {
+    width: 85vw; }
+  .services .text-services {
+    width: 85vw;
+    font-size: 16px; }
+  .services .cajas-servicios {
+    width: 100vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 21.25vw; }
+  .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+    font-size: 16px; }
+  .contact .container_contacto .btn-send {
+    font-size: 16px; }
+  .contact .container_contacto .form-label {
+    font-size: 16px; }
+  footer .info_footer .contactos_footer {
+    width: 180px; }
+    footer .info_footer .contactos_footer h3, footer .info_footer .contactos_footer p {
+      font-size: 16px; }
+  footer .info_footer .logo_footer img {
+    width: 200px;
+    height: auto; }
+  footer .info_footer .contactos_footer2 {
+    width: 180px; }
+    footer .info_footer .contactos_footer2 h3, footer .info_footer .contactos_footer2 p, footer .info_footer .contactos_footer2 a {
+      font-size: 16px; }
+  footer .derechos {
+    font-size: 16px; } }
+
+@media (max-width: 1439px) {
+  .banner .carousel-item {
+    height: 50vw; }
+  .about {
+    grid-template-rows: 20px 50px 80% 20px; }
+    .about .item3 {
+      font-size: 14px; }
+    .about .btn-dest a {
+      width: unset;
+      text-align: center;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 14px; }
+  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+    font-size: 14px; }
+  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
+    font-size: 14px; }
+  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
+    font-size: 12px; }
+  .services .img-services {
+    width: 80vw; }
+  .services .text-services {
+    width: 80vw;
+    font-size: 14px; }
+  .services .cajas-servicios {
+    width: 95vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 20vw; }
+  .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+    font-size: 14px; }
+  .contact .container_contacto .btn-send {
+    font-size: 14px; }
+  .contact .container_contacto .form-label {
+    font-size: 14px; }
+  footer .info_footer .contactos_footer {
+    width: 195px; }
+    footer .info_footer .contactos_footer h3, footer .info_footer .contactos_footer p {
+      font-size: 14px; }
+  footer .info_footer .logo_footer img {
+    width: 150px;
+    height: auto; }
+  footer .info_footer .contactos_footer2 {
+    width: 195px; }
+    footer .info_footer .contactos_footer2 h3, footer .info_footer .contactos_footer2 p, footer .info_footer .contactos_footer2 a {
+      font-size: 14px; }
+  footer .derechos {
+    font-size: 14px; } }
+
+@media (max-width: 1350px) {
+  .banner {
+    padding-bottom: 0; }
+  .about {
+    grid-template-rows: 20px 50px 86% 20px;
+    padding-top: 90px; }
+  .services .img-services {
+    width: 85vw; }
+  .services .text-services {
+    width: 85vw; }
+  .services .cajas-servicios {
+    width: 95vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 21.25vw; } }
+
+@media (max-width: 1199px) {
+  .about {
+    grid-template-rows: 20px 50px 86% 20px; }
+    .about .item3 {
+      font-size: 16px; }
+    .about .btn-dest a {
+      width: unset;
+      text-align: center;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 14px; }
+  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+    font-size: 16px; }
+  .services .img-services {
+    width: 90vw; }
+  .services .text-services {
+    width: 90vw;
+    font-size: 16px; }
+  .services .cajas-servicios {
+    width: 95vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 22.5vw;
+      height: auto; }
+      .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
+        margin-bottom: 10px; }
+  .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+    width: 50vw; }
+  .contact .container_contacto .btn-send {
+    font-size: 14px; }
+  .contact .container_contacto .form-label {
+    font-size: 14px; }
+  .politicas .caja_politicas {
+    grid-template-areas: "titulo titulo" "politicas1 politicas2" "politicas1 ."; } }
+
+@media (max-width: 991px) {
+  .banner {
+    padding-bottom: 0; }
+    .banner .carousel-item {
+      height: 50vw; }
+  .about {
+    grid-template-columns: 90vw;
+    grid-template-rows: 20px 50px 1fr 0.75fr 20px;
+    grid-template-areas: "mini" "titulo" "texto" "imagen" "boton";
+    padding-top: 50px;
+    padding-bottom: 90px;
+    justify-content: center; }
+    .about .item3 {
+      width: 90vw;
+      height: auto; }
+    .about .item4 {
+      width: 90vw; }
+    .about .btn-dest {
+      margin-top: 25px; }
+  .reviews .comentarios {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
+      width: 52.5%;
+      height: 50%; }
+  .services .cajas-servicios {
+    gap: 10px; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 35vw;
+      height: auto; }
+  .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+    width: 50vw; }
+  .politicas .caja_politicas {
+    width: 100vw;
+    grid-template-areas: "titulo titulo" "politicas1 politicas2" "politicas1 ."; }
+  footer .info_footer .contactos_footer {
+    width: 180px; }
+  footer .info_footer .contactos_footer2 {
+    width: 180px; }
+  footer .derechos {
+    font-size: 14px; } }
+
+@media (max-width: 767px) {
+  .banner {
+    padding-bottom: 0; }
+    .banner .carousel-item {
+      height: 50vw; }
+  .about {
+    grid-template-columns: 90vw;
+    grid-template-rows: 20px 30px 1fr 20px;
+    grid-template-areas: "mini" "titulo" "texto" "boton";
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: #FCEDE1; }
+    .about .item1 {
+      font-size: 10px;
+      color: #AC3520;
+      letter-spacing: 2px; }
+    .about .item2 {
+      font-size: 18px;
+      color: #002B51; }
+    .about .item3 {
+      width: 90vw;
+      height: auto;
+      color: #002B51;
+      font-size: 14px;
+      padding: 20px 30px 10px 30px; }
+    .about .item4 {
+      display: none; }
+    .about .btn-dest {
+      margin-top: 0; }
+      .about .btn-dest a {
+        color: #FCEDE1; }
+  .reviews {
+    display: none; }
+  .services {
+    background-color: rgba(215, 210, 210, 0.397);
+    padding-bottom: 50px; }
+    .services h2 {
+      font-size: 10px; }
+    .services h3 {
+      font-size: 18px; }
+    .services .img-services {
+      width: 80%;
+      height: 250px;
+      margin-bottom: 30px; }
+    .services .text-services {
+      width: 80vw;
+      font-size: 14px;
+      margin-bottom: 30px; }
+    .services .cajas-servicios {
+      width: 80vw;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      margin: auto; }
+      .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+        width: 80vw;
+        height: auto; }
+        .services .cajas-servicios .caja1 h3, .services .cajas-servicios .caja2 h3, .services .cajas-servicios .caja3 h3, .services .cajas-servicios .caja4 h3 {
+          font-size: 16px; }
+        .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
+          font-size: 14px;
+          line-height: 1.5; }
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .projects h2 {
+      font-size: 10px; }
+    .projects h3 {
+      padding: 0px 20px;
+      font-size: 18px;
+      margin-bottom: 30px; }
+    .projects .caja-proyectos {
+      flex-flow: column;
+      align-items: center; }
+      .projects .caja-proyectos figure {
+        width: 280px;
+        height: 180px; }
+        .projects .caja-proyectos figure .capa h3 {
+          font-size: 16px;
+          padding: 20px 45px 0px 45px; }
+        .projects .caja-proyectos figure .capa a {
+          display: none; }
+        .projects .caja-proyectos figure .capa p {
+          font-size: 12px;
+          line-height: 1.5;
+          max-width: 180px;
+          padding: 0px; }
+        .projects .caja-proyectos figure:hover > .capa h3 {
+          margin-top: 10px; }
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .contact h2 {
+      font-size: 10px; }
+    .contact h3 {
+      font-size: 18px; }
+    .contact .container_contacto {
+      flex-flow: column;
+      align-items: center; }
+      .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
+        width: 80vw;
+        font-size: 12px; }
+      .contact .container_contacto .btn-send {
+        font-size: 12px; }
+      .contact .container_contacto .info_contacto {
+        display: none; }
+      .contact .container_contacto .form-label {
+        font-size: 12px; }
+  .politicas .caja_politicas {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3);
+    grid-template-areas: "titulo" "politicas1" "politicas2"; }
+    .politicas .caja_politicas h1 {
+      grid-area: titulo;
+      font-size: 24px;
+      padding: 40px 0px 0px 40px; }
+    .politicas .caja_politicas .container_politicas {
+      grid-area: politicas1;
+      padding-bottom: 30px; }
+    .politicas .caja_politicas .container_politicas2 {
+      grid-area: politicas2;
+      padding-top: 0px; }
+    .politicas .caja_politicas .container_politicas h2, .politicas .caja_politicas .container_politicas2 h2 {
+      font-size: 16px;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .politicas .caja_politicas .container_politicas p, .politicas .caja_politicas .container_politicas2 p {
+      font-size: 12px; }
+  footer .info_footer {
+    flex-flow: column;
+    justify-content: center; }
+    footer .info_footer .contactos_footer {
+      width: 100%;
+      text-align: center; }
+      footer .info_footer .contactos_footer h3, footer .info_footer .contactos_footer p {
+        font-size: 12px; }
+    footer .info_footer .logo_footer {
+      justify-content: center; }
+      footer .info_footer .logo_footer img {
+        width: 150px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 35px; }
+    footer .info_footer .contactos_footer2 {
+      width: 100%;
+      text-align: center; }
+      footer .info_footer .contactos_footer2 h3, footer .info_footer .contactos_footer2 p, footer .info_footer .contactos_footer2 a {
+        font-size: 12px; }
+  footer .derechos {
+    font-size: 10px; } }

@@ -1,0 +1,16 @@
+.nav {
+    background-color: $color-principal;
+    .navBar {
+        justify-content: flex-end;
+    }
+    .burgerMenu {
+        background-color: $color-secundario;
+    }
+    a {
+        font-family: $tipografia-principal;
+        color: $color-secundario;
+        &:hover {
+            color: #AC3520;
+        }
+    }
+}
