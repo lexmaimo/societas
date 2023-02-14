@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth; }
 
+body {
+  background: #FCEDE1; }
+
 .nav {
   background-color: #002B51; }
   .nav .navBar {
@@ -19,14 +22,24 @@ html {
     .nav a:hover {
       color: #AC3520; }
 
-/* banner section */
+/* banners */
 .banner {
-  padding-bottom: 50px;
-  background-color: #FCEDE1; }
-  .banner .carousel-item {
-    height: 550px; }
+  background: #002b51;
+  background: linear-gradient(180deg, #002b51 0%, black 100%);
+  width: 100%;
+  height: 600px;
+  border-radius: 0px 0px 65% 65%;
+  color: #FCEDE1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner h1 {
+    font-size: 60px; }
+  .banner p {
+    font-size: 35px; }
 
-/* banner trabaja con nosotros & oportunidades */
 .banner-work, .banner-op {
   width: 100%;
   height: 750px;
@@ -36,7 +49,7 @@ html {
   background-image: url(../assets/img/job-interview.jpg);
   display: grid;
   align-content: center; }
-  .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
+  .banner-work .text-index, .banner-work .banner-text, .banner-work .text-op, .banner-op .text-index, .banner-op .banner-text, .banner-op .text-op {
     width: 80%;
     text-align: center;
     padding: 50px;
@@ -557,10 +570,6 @@ footer {
       color: #AC3520; }
 
 @media (max-width: 1600px) {
-  .banner {
-    padding-bottom: 0; }
-    .banner .carousel-item {
-      height: 50vw; }
   .about {
     grid-template-rows: 20px 50px 85% 20px;
     padding-top: 100px; }
@@ -609,8 +618,6 @@ footer {
     font-size: 16px; } }
 
 @media (max-width: 1439px) {
-  .banner .carousel-item {
-    height: 50vw; }
   .about {
     grid-template-rows: 20px 50px 80% 20px; }
     .about .item3 {
@@ -658,8 +665,6 @@ footer {
     font-size: 14px; } }
 
 @media (max-width: 1350px) {
-  .banner {
-    padding-bottom: 0; }
   .about {
     grid-template-rows: 20px 50px 86% 20px;
     padding-top: 90px; }
@@ -673,6 +678,15 @@ footer {
       width: 21.25vw; } }
 
 @media (max-width: 1199px) {
+  .banner-work, .banner-op {
+    height: 650px; }
+    .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
+      width: 80%;
+      text-align: center;
+      padding: 30px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 45px; }
   .about {
     grid-template-rows: 20px 50px 86% 20px; }
     .about .item3 {
@@ -705,22 +719,23 @@ footer {
   .contact .container_contacto .form-label {
     font-size: 14px; }
   .politicas .caja_politicas {
-    grid-template-areas: "titulo titulo" "politicas1 politicas2" "politicas1 ."; }
-  .banner-work, .banner-op {
-    height: 650px; }
-    .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
-      width: 80%;
-      text-align: center;
-      padding: 30px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 45px; } }
+    grid-template-areas: "titulo titulo" "politicas1 politicas2" "politicas1 ."; } }
 
 @media (max-width: 991px) {
-  .banner {
+  .banner, .banner-work, .banner-op {
+    height: 550px;
     padding-bottom: 0; }
-    .banner .carousel-item {
-      height: 50vw; }
+    .banner h1, .banner-work h1, .banner-op h1 {
+      font-size: 35px; }
+    .banner p, .banner-work p, .banner-op p {
+      font-size: 26px; }
+    .banner .banner-text, .banner .text-op, .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
+      width: 70%;
+      text-align: center;
+      padding: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 26px; }
   .about {
     grid-template-columns: 90vw;
     grid-template-rows: 20px 50px 1fr 0.75fr 20px;
@@ -764,16 +779,6 @@ footer {
         font-size: 15px; }
       .opportunities .card-group .card-body p {
         font-size: 14px; }
-  .banner-work, .banner-op {
-    height: 550px;
-    padding-bottom: 0; }
-    .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
-      width: 70%;
-      text-align: center;
-      padding: 20px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 26px; }
   footer .info_footer .contactos_footer {
     width: 180px; }
   footer .info_footer .contactos_footer2 {
@@ -783,9 +788,23 @@ footer {
 
 @media (max-width: 767px) {
   .banner {
+    height: 350px;
+    padding-bottom: 0;
+    border-radius: 0px 0px 50% 50%; }
+    .banner h1 {
+      font-size: 24px; }
+    .banner p {
+      font-size: 22px; }
+  .banner-work, .banner-op {
+    height: 350px;
     padding-bottom: 0; }
-    .banner .carousel-item {
-      height: 50vw; }
+    .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
+      width: 90%;
+      text-align: center;
+      padding: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 20px; }
   .about {
     grid-template-columns: 90vw;
     grid-template-rows: 20px 30px 1fr 20px;
@@ -931,16 +950,6 @@ footer {
         font-size: 12px; }
       .opportunities .card-group .card-body .btn-op a {
         font-size: 12px; }
-  .banner-work, .banner-op {
-    height: 350px;
-    padding-bottom: 0; }
-    .banner-work .banner-text, .banner-work .text-op, .banner-op .banner-text, .banner-op .text-op {
-      width: 90%;
-      text-align: center;
-      padding: 20px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 20px; }
   footer .info_footer {
     flex-flow: column;
     justify-content: center; }

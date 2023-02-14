@@ -1,17 +1,28 @@
-/* banner section */
+/* banners */
 .banner {
-    padding-bottom: 50px;
-    background-color: $color-secundario;
-    .carousel-item {
-        height: 550px;
+    background: rgb(0,43,81);
+    background: linear-gradient(180deg, rgba(0,43,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 600px;
+    border-radius: 0px 0px 65% 65%;
+    color: $color-secundario;
+    font-family: $tipografia-principal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 35px;
     }
 }
-/* banner trabaja con nosotros & oportunidades */
 .banner-work, .banner-op {
     @include foto-model (100%, 750px, none, cover, center, url(../assets/img/job-interview.jpg));
     display: grid;
     align-content: center;
-    .banner-text, .text-op {
+    .text-index, .banner-text, .text-op {
         @include title (80%, center, 50px, $tipografia-principal, normal, 65px);
         font-style: normal;
         display: grid;

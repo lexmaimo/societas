@@ -1,10 +1,4 @@
 @media (max-width: 1600px) {
-    .banner {
-        padding-bottom: 0;
-        .carousel-item {
-            height: 50vw;
-        }
-    }
     .about {
         grid-template-rows: 20px 50px 85% 20px;
         padding-top: 100px;
@@ -91,11 +85,6 @@
 }
 
 @media (max-width: 1439px) {
-    .banner {
-        .carousel-item {
-            height: 50vw;
-        }
-    }
     .about {
         grid-template-rows: 20px 50px 80% 20px;
         .item3 {
@@ -181,9 +170,6 @@
 }
 
 @media (max-width: 1350px) {
-    .banner {
-        padding-bottom: 0;
-    }
     .about {
         grid-template-rows: 20px 50px 86% 20px;
         padding-top: 90px;
@@ -205,6 +191,12 @@
 }
 
 @media (max-width: 1199px) {
+    .banner-work, .banner-op {
+        height: 650px;
+        .banner-text, .text-op {
+            @include title (80%, center, 30px, $tipografia-principal, normal, 45px);
+        }
+    }
     .about {
         grid-template-rows: 20px 50px 86% 20px;
         .item3 {
@@ -265,19 +257,20 @@
             ;
         }
     }
-    .banner-work, .banner-op {
-        height: 650px;
-        .banner-text, .text-op {
-            @include title (80%, center, 30px, $tipografia-principal, normal, 45px);
-        }
-    }
 }
 
 @media (max-width: 991px) {
-    .banner {
+    .banner, .banner-work, .banner-op {
+        height: 550px;
         padding-bottom: 0;
-        .carousel-item {
-            height: 50vw;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 26px;
+        }
+        .banner-text, .text-op {
+            @include title (70%, center, 20px, $tipografia-principal, normal, 26px);
         }
     }
     .about {
@@ -358,13 +351,6 @@
             }
         }
     }
-    .banner-work, .banner-op {
-        height: 550px;
-        padding-bottom: 0;
-        .banner-text, .text-op {
-            @include title (70%, center, 20px, $tipografia-principal, normal, 26px);
-        }
-    }
     footer {
         .info_footer {
             .contactos_footer {
@@ -382,9 +368,21 @@
 
 @media (max-width: 767px) {
     .banner {
+        height: 350px;
         padding-bottom: 0;
-        .carousel-item {
-            height: 50vw;
+        border-radius: 0px 0px 50% 50%;
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+    .banner-work, .banner-op {
+        height: 350px;
+        padding-bottom: 0;
+        .banner-text, .text-op {
+            @include title (90%, center, 20px, $tipografia-principal, normal, 20px);
         }
     }
     .about {
@@ -594,13 +592,6 @@
                     }
                 }
             }
-        }
-    }
-    .banner-work, .banner-op {
-        height: 350px;
-        padding-bottom: 0;
-        .banner-text, .text-op {
-            @include title (90%, center, 20px, $tipografia-principal, normal, 20px);
         }
     }
     footer {
