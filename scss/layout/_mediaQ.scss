@@ -371,11 +371,15 @@
         height: 350px;
         padding-bottom: 0;
         border-radius: 0px 0px 50% 50%;
-        h1 {
-            font-size: 24px;
-        }
-        p {
-            font-size: 22px;
+        .titulo-banner {
+            h1 {
+                width: 90%;
+                font-size: 24px;
+            }
+            p {
+                width: 90%;
+                font-size: 22px;
+            }
         }
     }
     .banner-work, .banner-op {

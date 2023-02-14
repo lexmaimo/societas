@@ -35,10 +35,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .banner h1 {
-    font-size: 60px; }
-  .banner p {
-    font-size: 35px; }
+  .banner .titulo-banner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .banner .titulo-banner h1 {
+      font-size: 60px; }
+    .banner .titulo-banner p {
+      font-size: 35px; }
 
 .banner-work, .banner-op {
   width: 100%;
@@ -791,9 +796,11 @@ footer {
     height: 350px;
     padding-bottom: 0;
     border-radius: 0px 0px 50% 50%; }
-    .banner h1 {
+    .banner .titulo-banner h1 {
+      width: 90%;
       font-size: 24px; }
-    .banner p {
+    .banner .titulo-banner p {
+      width: 90%;
       font-size: 22px; }
   .banner-work, .banner-op {
     height: 350px;
