@@ -265,6 +265,12 @@
             ;
         }
     }
+    .banner-work, .banner-op {
+        height: 650px;
+        .banner-text, .text-op {
+            @include title (80%, center, 30px, $tipografia-principal, normal, 45px);
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -331,6 +337,32 @@
             "politicas1 politicas2"
             "politicas1 ."
             ;
+        }
+    }
+    .opportunities {
+        padding-top: 50px;
+        padding-bottom: 90px;
+        .card-group {
+            width: 50vw;
+            flex-flow: column;
+            .card-body {
+                h5, h6, p {
+                        font-size: 16px;
+                }
+                h6 {
+                        font-size: 15px;
+                }
+                p {
+                        font-size: 14px;
+                }
+            }
+        }
+    }
+    .banner-work, .banner-op {
+        height: 550px;
+        padding-bottom: 0;
+        .banner-text, .text-op {
+            @include title (70%, center, 20px, $tipografia-principal, normal, 26px);
         }
     }
     footer {
@@ -532,6 +564,43 @@
                     font-size: 12px;
                 }
             }
+        }
+    }
+    .opportunities {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .card-group {
+            width: 80vw;
+            flex-flow: column;
+            .card-body {
+                h5, h6, p {
+                        font-size: 14px;
+                }
+                h6 {
+                        font-size: 13px;
+                }
+                p {
+                        font-size: 12px;
+                }
+                .btn-op {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .banner-work, .banner-op {
+        height: 350px;
+        padding-bottom: 0;
+        .banner-text, .text-op {
+            @include title (90%, center, 20px, $tipografia-principal, normal, 20px);
         }
     }
     footer {
