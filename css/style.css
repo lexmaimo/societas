@@ -75,15 +75,8 @@ body {
 
 /* about section */
 .about {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20px 50px 440px 20px;
-  grid-template-areas: "mini ." "titulo ." "texto imagen" "boton .";
   padding-top: 50px;
-  padding-bottom: 125px;
-  background-color: #FCEDE1; }
+  padding-bottom: 125px; }
   .about .item1 {
     width: 100%;
     grid-area: mini;
@@ -99,39 +92,46 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     color: #002B51; }
-  .about .item3 {
-    grid-area: texto;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: #002B51;
-    padding: 30px; }
-  .about .item4 {
-    grid-area: imagen;
-    width: 85%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../assets/img/shaking-hands.jpg); }
-  .about .btn-dest {
-    grid-area: boton;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 30px; }
-    .about .btn-dest a {
-      width: unset;
-      text-align: center;
-      padding: 10px;
+  .about .caja-about {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2);
+    grid-template-areas: "texto imagen" "boton .";
+    margin: auto;
+    padding-top: 20px; }
+    .about .caja-about .item3 {
+      grid-area: texto;
       font-family: "Roboto", sans-serif;
-      font-weight: normal;
       font-size: 14px;
-      text-decoration: none;
-      color: #FCEDE1;
-      background-color: #AC3520; }
-      .about .btn-dest a:hover {
-        background-color: #002B51;
-        transition: all 500ms ease-out; }
+      color: #002B51;
+      padding: 30px 30px 20px 0px; }
+    .about .caja-about .item4 {
+      grid-area: imagen;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/shaking-hands.jpg); }
+    .about .caja-about .btn-dest {
+      grid-area: boton;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .about .caja-about .btn-dest a {
+        width: unset;
+        text-align: center;
+        padding: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        text-decoration: none;
+        color: #FCEDE1;
+        background-color: #AC3520; }
+        .about .caja-about .btn-dest a:hover {
+          background-color: #002B51;
+          transition: all 500ms ease-out; }
 
 /* reviews section */
 .reviews {
@@ -271,6 +271,7 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
       .services .cajas-servicios .caja1 h3, .services .cajas-servicios .caja2 h3, .services .cajas-servicios .caja3 h3, .services .cajas-servicios .caja4 h3 {
+        text-align: center;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         font-weight: bold;
@@ -576,7 +577,6 @@ footer {
 
 @media (max-width: 1600px) {
   .about {
-    grid-template-rows: 20px 50px 85% 20px;
     padding-top: 100px; }
     .about .item3 {
       font-size: 16px; }
@@ -623,17 +623,15 @@ footer {
     font-size: 16px; } }
 
 @media (max-width: 1439px) {
-  .about {
-    grid-template-rows: 20px 50px 80% 20px; }
-    .about .item3 {
-      font-size: 14px; }
-    .about .btn-dest a {
-      width: unset;
-      text-align: center;
-      padding: 10px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 14px; }
+  .about .item3 {
+    font-size: 14px; }
+  .about .btn-dest a {
+    width: unset;
+    text-align: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px; }
   .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
     font-size: 14px; }
   .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
@@ -671,7 +669,6 @@ footer {
 
 @media (max-width: 1350px) {
   .about {
-    grid-template-rows: 20px 50px 86% 20px;
     padding-top: 90px; }
   .services .img-services {
     width: 85vw; }
@@ -692,17 +689,15 @@ footer {
       font-family: "Roboto", sans-serif;
       font-weight: normal;
       font-size: 45px; }
-  .about {
-    grid-template-rows: 20px 50px 86% 20px; }
-    .about .item3 {
-      font-size: 16px; }
-    .about .btn-dest a {
-      width: unset;
-      text-align: center;
-      padding: 10px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 14px; }
+  .about .item3 {
+    font-size: 16px; }
+  .about .btn-dest a {
+    width: unset;
+    text-align: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px; }
   .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
     font-size: 16px; }
   .services .img-services {
@@ -742,19 +737,20 @@ footer {
       font-weight: normal;
       font-size: 26px; }
   .about {
-    grid-template-columns: 90vw;
-    grid-template-rows: 20px 50px 1fr 0.75fr 20px;
-    grid-template-areas: "mini" "titulo" "texto" "imagen" "boton";
-    padding-top: 50px;
-    padding-bottom: 90px;
-    justify-content: center; }
-    .about .item3 {
-      width: 90vw;
-      height: auto; }
-    .about .item4 {
-      width: 90vw; }
-    .about .btn-dest {
-      margin-top: 25px; }
+    padding-top: 100px;
+    padding-bottom: 90px; }
+    .about .caja-about {
+      display: grid;
+      flex-flow: column;
+      justify-content: center; }
+      .about .caja-about .item3 {
+        width: 90vw;
+        height: auto;
+        padding: 30px 0px; }
+      .about .caja-about .item4 {
+        display: none; }
+      .about .caja-about .btn-dest {
+        margin-top: 25px; }
   .reviews .comentarios {
     display: flex;
     flex-flow: column;
@@ -813,31 +809,28 @@ footer {
       font-weight: normal;
       font-size: 20px; }
   .about {
-    grid-template-columns: 90vw;
-    grid-template-rows: 20px 30px 1fr 20px;
-    grid-template-areas: "mini" "titulo" "texto" "boton";
-    padding-bottom: 50px;
-    justify-content: center;
-    background-color: #FCEDE1; }
+    padding-top: 100px;
+    padding-bottom: 90px; }
     .about .item1 {
       font-size: 10px;
-      color: #AC3520;
       letter-spacing: 2px; }
     .about .item2 {
-      font-size: 18px;
-      color: #002B51; }
-    .about .item3 {
-      width: 90vw;
-      height: auto;
-      color: #002B51;
-      font-size: 14px;
-      padding: 20px 30px 10px 30px; }
-    .about .item4 {
-      display: none; }
-    .about .btn-dest {
-      margin-top: 0; }
-      .about .btn-dest a {
-        color: #FCEDE1; }
+      font-size: 18px; }
+    .about .caja-about {
+      display: grid;
+      flex-flow: column;
+      justify-content: center; }
+      .about .caja-about .item3 {
+        width: 80vw;
+        height: auto;
+        font-size: 14px;
+        padding: 30px 0px; }
+      .about .caja-about .item4 {
+        display: none; }
+      .about .caja-about .btn-dest {
+        margin-top: 0; }
+        .about .caja-about .btn-dest a {
+          color: #FCEDE1; }
   .reviews {
     display: none; }
   .services {
