@@ -93,7 +93,7 @@ body {
     font-size: 24px;
     color: #002B51; }
   .about .caja-about {
-    width: 80%;
+    width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2);
@@ -106,6 +106,8 @@ body {
       font-size: 14px;
       color: #002B51;
       padding: 30px 30px 20px 0px; }
+      .about .caja-about .item3 .main_letter {
+        font-size: 26px; }
     .about .caja-about .item4 {
       grid-area: imagen;
       width: 100%;
@@ -133,71 +135,6 @@ body {
           background-color: #002B51;
           transition: all 500ms ease-out; }
 
-/* reviews section */
-.reviews {
-  background-color: #002B51;
-  color: #FCEDE1;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .reviews h2 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-size: 11px;
-    color: #AC3520;
-    letter-spacing: 2px; }
-  .reviews h3 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-size: 24px; }
-  .reviews .comentarios {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 45px;
-    padding-top: 50px;
-    padding-bottom: 30px; }
-    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
-      width: 35%;
-      height: 35%;
-      padding: 25px;
-      background-color: #FCEDE1;
-      border-radius: 20px;
-      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
-      .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        color: #002B51; }
-      .reviews .comentarios .opinion1 .caja-comentario, .reviews .comentarios .opinion2 .caja-comentario {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 10px;
-        padding-top: 10px;
-        align-items: center; }
-        .reviews .comentarios .opinion1 .caja-comentario .img-opinion, .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          background-size: cover;
-          background-position: center;
-          background-image: url(../assets/img/avatar3.jpg); }
-        .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
-          background-image: url(../assets/img/avatar4.jpg); }
-        .reviews .comentarios .opinion1 .caja-comentario .caja-texto, .reviews .comentarios .opinion2 .caja-comentario .caja-texto {
-          display: flex;
-          flex-flow: column; }
-          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
-            font-family: "Roboto", sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-            color: #AC3520;
-            margin-bottom: 0; }
-          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
-            font-family: "Roboto", sans-serif;
-            font-size: 12px;
-            font-weight: bold;
-            color: #002B51;
-            margin-bottom: 0; }
-
 /* services section */
 .services {
   background-color: #FCEDE1;
@@ -215,31 +152,22 @@ body {
     text-align: center;
     font-size: 24px;
     padding-bottom: 30px; }
-  .services .img-services {
-    width: 80%;
-    height: 250px;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url();
-    background-color: #AC3520;
-    margin-bottom: 50px; }
   .services .text-services {
-    width: 80vw;
+    width: 80%;
     margin: auto;
     margin-bottom: 50px;
     font-family: "Roboto", sans-serif;
     font-size: 14px; }
   .services .cajas-servicios {
-    width: 95vw;
+    width: 80vw;
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     gap: 5px;
+    justify-content: center;
     margin: auto; }
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 20vw;
+      width: 19.5vw;
       height: auto;
       display: flex;
       flex-flow: column;
@@ -276,14 +204,23 @@ body {
         font-size: 18px;
         font-weight: bold;
         color: #FCEDE1; }
+      .services .cajas-servicios .caja1 p, .services .cajas-servicios .caja2 p, .services .cajas-servicios .caja3 p, .services .cajas-servicios .caja4 p {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #FCEDE1;
+        padding-bottom: 20px;
+        text-align: left; }
       .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
         font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: normal;
         color: #FCEDE1;
-        text-align: center;
+        text-align: left;
         line-height: 2;
         list-style: none; }
+        .services .cajas-servicios .caja1 li .main_word, .services .cajas-servicios .caja2 li .main_word, .services .cajas-servicios .caja3 li .main_word, .services .cajas-servicios .caja4 li .main_word {
+          font-weight: bold; }
     .services .cajas-servicios .caja2 {
       background-color: #224C70; }
     .services .cajas-servicios .caja3 {
@@ -376,6 +313,71 @@ body {
         visibility: visible; }
       .projects .caja-proyectos figure:hover > .capa h3 {
         margin-top: 20px; }
+
+/* reviews section */
+.reviews {
+  background-color: #002B51;
+  color: #FCEDE1;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .reviews h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 11px;
+    color: #AC3520;
+    letter-spacing: 2px; }
+  .reviews h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 24px; }
+  .reviews .comentarios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
+      width: 35%;
+      height: 35%;
+      padding: 25px;
+      background-color: #FCEDE1;
+      border-radius: 20px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+      .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: #002B51; }
+      .reviews .comentarios .opinion1 .caja-comentario, .reviews .comentarios .opinion2 .caja-comentario {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        padding-top: 10px;
+        align-items: center; }
+        .reviews .comentarios .opinion1 .caja-comentario .img-opinion, .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-size: cover;
+          background-position: center;
+          background-image: url(../assets/img/avatar3.jpg); }
+        .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
+          background-image: url(../assets/img/avatar4.jpg); }
+        .reviews .comentarios .opinion1 .caja-comentario .caja-texto, .reviews .comentarios .opinion2 .caja-comentario .caja-texto {
+          display: flex;
+          flex-flow: column; }
+          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #AC3520;
+            margin-bottom: 0; }
+          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #002B51;
+            margin-bottom: 0; }
 
 /* contact section */
 .contact {
@@ -578,30 +580,30 @@ footer {
 @media (max-width: 1600px) {
   .about {
     padding-top: 100px; }
-    .about .item3 {
-      font-size: 16px; }
-    .about .btn-dest a {
-      width: unset;
-      text-align: center;
-      padding: 10px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      font-size: 16px; }
+    .about .caja-about {
+      width: 85%; }
+      .about .caja-about .item3 {
+        font-size: 16px; }
+      .about .caja-about .btn-dest a {
+        width: unset;
+        text-align: center;
+        padding: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 16px; }
+  .services .text-services {
+    width: 85%;
+    font-size: 16px; }
+  .services .cajas-servicios {
+    width: 90vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 21vw; }
   .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
     font-size: 16px; }
   .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
     font-size: 16px; }
   .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
     font-size: 14px; }
-  .services .img-services {
-    width: 85vw; }
-  .services .text-services {
-    width: 85vw;
-    font-size: 16px; }
-  .services .cajas-servicios {
-    width: 100vw; }
-    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 21.25vw; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     font-size: 16px; }
   .contact .container_contacto .btn-send {
@@ -632,21 +634,19 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 14px; }
+  .services .text-services {
+    width: 85%;
+    font-size: 16px; }
+  .services .cajas-servicios {
+    width: 85vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 20.7vw; }
   .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
     font-size: 14px; }
   .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
     font-size: 14px; }
   .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
     font-size: 12px; }
-  .services .img-services {
-    width: 80vw; }
-  .services .text-services {
-    width: 80vw;
-    font-size: 14px; }
-  .services .cajas-servicios {
-    width: 95vw; }
-    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 20vw; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     font-size: 14px; }
   .contact .container_contacto .btn-send {
@@ -670,14 +670,14 @@ footer {
 @media (max-width: 1350px) {
   .about {
     padding-top: 90px; }
-  .services .img-services {
-    width: 85vw; }
+    .about .caja-about {
+      width: 85%; }
   .services .text-services {
     width: 85vw; }
   .services .cajas-servicios {
     width: 95vw; }
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 21.25vw; } }
+      width: 21vw; } }
 
 @media (max-width: 1199px) {
   .banner-work, .banner-op {
@@ -698,20 +698,18 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 14px; }
-  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-    font-size: 16px; }
-  .services .img-services {
-    width: 90vw; }
   .services .text-services {
-    width: 90vw;
+    width: 85vw;
     font-size: 16px; }
   .services .cajas-servicios {
-    width: 95vw; }
+    width: 85vw; }
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 22.5vw;
+      width: 42vw;
       height: auto; }
       .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
         margin-bottom: 10px; }
+  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
+    font-size: 16px; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     width: 50vw; }
   .contact .container_contacto .btn-send {
@@ -751,6 +749,13 @@ footer {
         display: none; }
       .about .caja-about .btn-dest {
         margin-top: 25px; }
+  .services .text-services {
+    width: 90vw; }
+  .services .cajas-servicios {
+    width: 90vw; }
+    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
+      width: 44.5vw;
+      height: auto; }
   .reviews .comentarios {
     display: flex;
     flex-flow: column;
@@ -758,11 +763,6 @@ footer {
     .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
       width: 52.5%;
       height: 50%; }
-  .services .cajas-servicios {
-    gap: 10px; }
-    .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-      width: 35vw;
-      height: auto; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     width: 50vw; }
   .politicas .caja_politicas {
@@ -818,8 +818,7 @@ footer {
       font-size: 18px; }
     .about .caja-about {
       display: grid;
-      flex-flow: column;
-      justify-content: center; }
+      flex-flow: column; }
       .about .caja-about .item3 {
         width: 80vw;
         height: auto;
@@ -831,37 +830,32 @@ footer {
         margin-top: 0; }
         .about .caja-about .btn-dest a {
           color: #FCEDE1; }
-  .reviews {
-    display: none; }
   .services {
-    background-color: rgba(215, 210, 210, 0.397);
     padding-bottom: 50px; }
     .services h2 {
       font-size: 10px; }
     .services h3 {
       font-size: 18px; }
-    .services .img-services {
-      width: 80%;
-      height: 250px;
-      margin-bottom: 30px; }
     .services .text-services {
-      width: 80vw;
+      width: 85vw;
       font-size: 14px;
       margin-bottom: 30px; }
     .services .cajas-servicios {
-      width: 80vw;
+      width: 85vw;
       height: auto;
       display: flex;
       flex-flow: row wrap;
       margin: auto; }
       .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
-        width: 80vw;
+        width: 85vw;
         height: auto; }
         .services .cajas-servicios .caja1 h3, .services .cajas-servicios .caja2 h3, .services .cajas-servicios .caja3 h3, .services .cajas-servicios .caja4 h3 {
           font-size: 16px; }
         .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
           font-size: 14px;
           line-height: 1.5; }
+  .reviews {
+    display: none; }
   .projects {
     padding-top: 50px;
     padding-bottom: 50px; }

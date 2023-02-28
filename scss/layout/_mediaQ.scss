@@ -1,12 +1,27 @@
 @media (max-width: 1600px) {
     .about {
         padding-top: 100px;
-        .item3 {
+        .caja-about {
+            width: 85%;
+            .item3 {
+                font-size: 16px;
+            }
+            .btn-dest {
+                a {
+                    @include title (unset, center, 10px, $tipografia-principal, normal, 16px);
+                }
+            }
+        }
+    }
+    .services {
+        .text-services {
+            width: 85%;
             font-size: 16px;
         }
-        .btn-dest {
-            a {
-                @include title (unset, center, 10px, $tipografia-principal, normal, 16px);
+        .cajas-servicios {
+            width: 90vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                width: 21vw;
             }
         }
     }
@@ -26,21 +41,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-    .services {
-        .img-services {
-            width: 85vw;
-        }
-        .text-services {
-            width: 85vw;
-            font-size: 16px;
-        }
-        .cajas-servicios {
-            width: 100vw;            
-            .caja1, .caja2, .caja3, .caja4 {
-                width: 21.25vw;
             }
         }
     }
@@ -94,6 +94,18 @@
             }
         }
     }
+    .services {
+        .text-services {
+            width: 85%;
+            font-size: 16px;
+        }
+        .cajas-servicios {
+            width: 85vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                width: 20.7vw;
+            }
+        }
+    }
     .reviews {
         .comentarios {
             .opinion1, .opinion2 {
@@ -110,21 +122,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-    .services {
-        .img-services {
-            width: 80vw;
-        }
-        .text-services {
-            width: 80vw;
-            font-size: 14px;
-        }
-        .cajas-servicios {
-            width: 95vw;            
-            .caja1, .caja2, .caja3, .caja4 {
-                width: 20vw;
             }
         }
     }
@@ -170,18 +167,18 @@
 @media (max-width: 1350px) {
     .about {
         padding-top: 90px;
+        .caja-about {
+            width: 85%;
+        }
     }
     .services {
-        .img-services {
-            width: 85vw;
-        }
         .text-services {
             width: 85vw;
         }
         .cajas-servicios {
             width: 95vw;
             .caja1, .caja2, .caja3, .caja4 {
-                width: 21.25vw;
+                width: 21vw;
             }
         }
     }
@@ -204,29 +201,26 @@
             }
         }
     }
+    .services {
+        .text-services {
+            width: 85vw;
+            font-size: 16px;
+        }
+        .cajas-servicios {
+            width: 85vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                @include medidas (42vw, auto);
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
     .reviews {
         .comentarios {
             .opinion1, .opinion2 {
                 .text-comment {
                     font-size: 16px;
-                }
-            }
-        }
-    }
-    .services {
-        .img-services {
-            width: 90vw;
-        }
-        .text-services {
-            width: 90vw;
-            font-size: 16px;
-        }
-        .cajas-servicios {
-            width: 95vw;
-            .caja1, .caja2, .caja3, .caja4 {
-                @include medidas (22.5vw, auto);
-                li {
-                    margin-bottom: 10px;
                 }
             }
         }
@@ -289,6 +283,17 @@
             }
         }
     }
+    .services {
+        .text-services {
+            width: 90vw;
+        }
+        .cajas-servicios {
+            width: 90vw;
+            .caja1, .caja2, .caja3, .caja4 {
+                @include medidas (44.5vw, auto);
+            }
+        }
+    }
     .reviews {
         .comentarios {
             display: flex;
@@ -296,14 +301,6 @@
             align-items: center;
             .opinion1, .opinion2 {
                 @include medidas (52.5%, 50%);
-            }
-        }
-    }
-    .services {
-        .cajas-servicios {
-            gap: 10px;
-            .caja1, .caja2, .caja3, .caja4 {
-                @include medidas (35vw, auto);
             }
         }
     }
@@ -394,7 +391,6 @@
         .caja-about {
             display: grid;
             flex-flow: column;
-            justify-content: center;
             .item3 {
                 width: 80vw;
                 height: auto;
@@ -412,11 +408,7 @@
         }
     }
     }
-    .reviews {
-        display: none;
-    }
     .services {
-        background-color: rgba(215, 210, 210, 0.397);
         padding-bottom: 50px;
         h2 {
             font-size: 10px;
@@ -424,23 +416,18 @@
         h3 {
             font-size: 18px;
         }
-        .img-services {
-            width: 80%;
-            height: 250px;
-            margin-bottom: 30px;
-        }
         .text-services {
-            width: 80vw;
+            width: 85vw;
             font-size: 14px;
             margin-bottom: 30px;
         }
         .cajas-servicios {
-            @include medidas (80vw, auto);
+            @include medidas (85vw, auto);
             display: flex;
             flex-flow: row wrap;
             margin: auto;
             .caja1, .caja2, .caja3, .caja4 {
-                @include medidas (80vw, auto);
+                @include medidas (85vw, auto);
                 h3 {
                     font-size: 16px;
                 }
@@ -450,6 +437,9 @@
                 }
             }
         }
+    }
+    .reviews {
+        display: none;
     }
     .projects {
         padding-top: 50px;

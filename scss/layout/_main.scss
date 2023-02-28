@@ -66,7 +66,7 @@
         color: $color-principal;
     }
     .caja-about {
-        width: 80%;
+        width: 80vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2);
@@ -82,11 +82,13 @@
             font-size: 14px;
             color: $color-principal;
             padding: 30px 30px 20px 0px;
+            .main_letter {
+                font-size: 26px;
+            }
         }
         .item4 {
             grid-area: imagen;
-            width: 100%;
-            height: 100%;
+            @include medidas (100%, 100%);
             background-size: cover;
             background-position: center;
             background-image: url(../assets/img/shaking-hands.jpg);
@@ -102,80 +104,6 @@
                 &:hover {
                     background-color: $color-principal;
                     transition: all 500ms ease-out;
-                }
-            }
-        }
-    }
-}
-/* reviews section */
-.reviews {
-    background-color: $color-principal;
-    color: $color-secundario;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    h2 {
-        font-family: $tipografia-principal;
-        text-align: center;
-        font-size: 11px;
-        color: $color-boton;
-        letter-spacing: 2px;
-    }
-    h3 {
-        font-family: $tipografia-principal;
-        text-align: center;
-        font-size: 24px;
-    }
-    .comentarios {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        gap: 45px;
-        padding-top: 50px;
-        padding-bottom: 30px;
-        .opinion1, .opinion2 {
-            @include medidas (35%, 35%);
-            padding: 25px;
-            background-color: $color-secundario;
-            border-radius: 20px;
-            box-shadow: 0px 15px 25px $box-shadow;
-            .text-comment {
-                font-family: $tipografia-principal;
-                font-size: 14px;
-                color: $color-principal;
-            }
-            .caja-comentario {
-                display: flex;
-                flex-flow: row wrap;
-                gap: 10px;
-                padding-top: 10px;
-                align-items: center;
-                .img-opinion, .img-opinion2 {
-                    @include medidas (100px, 100px);
-                    border-radius: 100%;
-                    background-size: cover;
-                    background-position: center;
-                    background-image: url(../assets/img/avatar3.jpg);
-                }
-                .img-opinion2 {
-                    background-image: url(../assets/img/avatar4.jpg);
-                }
-                .caja-texto {
-                    display: flex;
-                    flex-flow: column;
-                    .texto1 {
-                        font-family: $tipografia-principal;
-                        font-size: 14px;
-                        font-weight: bold;
-                        color: $color-boton;
-                        margin-bottom: 0;
-                    }
-                    .texto2 {
-                        font-family: $tipografia-principal;
-                        font-size: 12px;
-                        font-weight: bold;
-                        color: $color-principal;
-                        margin-bottom: 0;
-                    }
                 }
             }
         }
@@ -200,32 +128,22 @@
         font-size: 24px;
         padding-bottom: 30px;
     }
-    .img-services {
-        width: 80%;
-        height: 250px;
-        margin: auto;
-        background-size: cover;
-        background-position: center;
-        background-image: url();
-        background-color: $color-boton;
-        margin-bottom: 50px;
-    }
     .text-services {
-        width: 80vw;
+        width: 80%;
         margin: auto;
         margin-bottom: 50px;
         font-family: $tipografia-principal;
         font-size: 14px;
     }
     .cajas-servicios {
-        @include medidas (95vw, auto);
+        @include medidas (80vw, auto);
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
         gap: 5px;
+        justify-content: center;
         margin: auto;
         .caja1, .caja2, .caja3, .caja4 {
-            @include medidas (20vw, auto);
+            @include medidas (19.5vw, auto);
             @include flex (column, flex-start, center);
             background-color: $color-principal;
             padding-bottom: 15px;
@@ -264,14 +182,25 @@
                 font-weight: bold;
                 color: $color-secundario;
             }
+            p {
+                font-family: $tipografia-principal;
+                font-size: 16px;
+                font-weight: normal;
+                color: $color-secundario;
+                padding-bottom: 20px;
+                text-align: left;
+            }
             li {
                 font-family: $tipografia-principal;
                 font-size: 14px;
                 font-weight: normal;
                 color: $color-secundario;
-                text-align: center;
+                text-align: left;
                 line-height: 2;
                 list-style: none;
+                .main_word {
+                    font-weight: bold;
+                }
             }
         }
         .caja2 {
@@ -376,6 +305,80 @@
             }
             &:hover > .capa h3 {
                 margin-top: 20px;
+            }
+        }
+    }
+}
+/* reviews section */
+.reviews {
+    background-color: $color-principal;
+    color: $color-secundario;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h2 {
+        font-family: $tipografia-principal;
+        text-align: center;
+        font-size: 11px;
+        color: $color-boton;
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-family: $tipografia-principal;
+        text-align: center;
+        font-size: 24px;
+    }
+    .comentarios {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 45px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        .opinion1, .opinion2 {
+            @include medidas (35%, 35%);
+            padding: 25px;
+            background-color: $color-secundario;
+            border-radius: 20px;
+            box-shadow: 0px 15px 25px $box-shadow;
+            .text-comment {
+                font-family: $tipografia-principal;
+                font-size: 14px;
+                color: $color-principal;
+            }
+            .caja-comentario {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 10px;
+                padding-top: 10px;
+                align-items: center;
+                .img-opinion, .img-opinion2 {
+                    @include medidas (100px, 100px);
+                    border-radius: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url(../assets/img/avatar3.jpg);
+                }
+                .img-opinion2 {
+                    background-image: url(../assets/img/avatar4.jpg);
+                }
+                .caja-texto {
+                    display: flex;
+                    flex-flow: column;
+                    .texto1 {
+                        font-family: $tipografia-principal;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $color-boton;
+                        margin-bottom: 0;
+                    }
+                    .texto2 {
+                        font-family: $tipografia-principal;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: $color-principal;
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
