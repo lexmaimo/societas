@@ -25,25 +25,6 @@
             }
         }
     }
-    .reviews {
-        .comentarios {
-            .opinion1, .opinion2 {
-                .text-comment {
-                    font-size: 16px;
-                }
-                .caja-comentario {
-                    .caja-texto {
-                        .texto1 {
-                            font-size: 16px;
-                        }
-                        .texto2 {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-    }
     .contact {
         .container_contacto {
             .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
@@ -103,25 +84,6 @@
             width: 85vw;
             .caja1, .caja2, .caja3, .caja4 {
                 width: 20.7vw;
-            }
-        }
-    }
-    .reviews {
-        .comentarios {
-            .opinion1, .opinion2 {
-                .text-comment {
-                    font-size: 14px;
-                }
-                .caja-comentario {
-                    .caja-texto {
-                        .texto1 {
-                            font-size: 14px;
-                        }
-                        .texto2 {
-                            font-size: 12px;
-                        }
-                    }
-                }
             }
         }
     }
@@ -216,15 +178,6 @@
             }
         }
     }
-    .reviews {
-        .comentarios {
-            .opinion1, .opinion2 {
-                .text-comment {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
     .contact {
         .container_contacto {
             .name, .lastname, .email, .tel, .archivo, .mensaje, .position {
@@ -291,16 +244,6 @@
             width: 90vw;
             .caja1, .caja2, .caja3, .caja4 {
                 @include medidas (44.5vw, auto);
-            }
-        }
-    }
-    .reviews {
-        .comentarios {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            .opinion1, .opinion2 {
-                @include medidas (52.5%, 50%);
             }
         }
     }
@@ -437,9 +380,6 @@
                 }
             }
         }
-    }
-    .reviews {
-        display: none;
     }
     .projects {
         padding-top: 50px;

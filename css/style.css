@@ -314,71 +314,6 @@ body {
       .projects .caja-proyectos figure:hover > .capa h3 {
         margin-top: 20px; }
 
-/* reviews section */
-.reviews {
-  background-color: #002B51;
-  color: #FCEDE1;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .reviews h2 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-size: 11px;
-    color: #AC3520;
-    letter-spacing: 2px; }
-  .reviews h3 {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-size: 24px; }
-  .reviews .comentarios {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 45px;
-    padding-top: 50px;
-    padding-bottom: 30px; }
-    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
-      width: 35%;
-      height: 35%;
-      padding: 25px;
-      background-color: #FCEDE1;
-      border-radius: 20px;
-      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
-      .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        color: #002B51; }
-      .reviews .comentarios .opinion1 .caja-comentario, .reviews .comentarios .opinion2 .caja-comentario {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 10px;
-        padding-top: 10px;
-        align-items: center; }
-        .reviews .comentarios .opinion1 .caja-comentario .img-opinion, .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          background-size: cover;
-          background-position: center;
-          background-image: url(../assets/img/avatar3.jpg); }
-        .reviews .comentarios .opinion1 .caja-comentario .img-opinion2, .reviews .comentarios .opinion2 .caja-comentario .img-opinion2 {
-          background-image: url(../assets/img/avatar4.jpg); }
-        .reviews .comentarios .opinion1 .caja-comentario .caja-texto, .reviews .comentarios .opinion2 .caja-comentario .caja-texto {
-          display: flex;
-          flex-flow: column; }
-          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
-            font-family: "Roboto", sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-            color: #AC3520;
-            margin-bottom: 0; }
-          .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
-            font-family: "Roboto", sans-serif;
-            font-size: 12px;
-            font-weight: bold;
-            color: #002B51;
-            margin-bottom: 0; }
-
 /* contact section */
 .contact {
   padding-top: 80px;
@@ -598,12 +533,6 @@ footer {
     width: 90vw; }
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
       width: 21vw; }
-  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-    font-size: 16px; }
-  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
-    font-size: 16px; }
-  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
-    font-size: 14px; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     font-size: 16px; }
   .contact .container_contacto .btn-send {
@@ -641,12 +570,6 @@ footer {
     width: 85vw; }
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
       width: 20.7vw; }
-  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-    font-size: 14px; }
-  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto1, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto1 {
-    font-size: 14px; }
-  .reviews .comentarios .opinion1 .caja-comentario .caja-texto .texto2, .reviews .comentarios .opinion2 .caja-comentario .caja-texto .texto2 {
-    font-size: 12px; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     font-size: 14px; }
   .contact .container_contacto .btn-send {
@@ -708,8 +631,6 @@ footer {
       height: auto; }
       .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
         margin-bottom: 10px; }
-  .reviews .comentarios .opinion1 .text-comment, .reviews .comentarios .opinion2 .text-comment {
-    font-size: 16px; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     width: 50vw; }
   .contact .container_contacto .btn-send {
@@ -756,13 +677,6 @@ footer {
     .services .cajas-servicios .caja1, .services .cajas-servicios .caja2, .services .cajas-servicios .caja3, .services .cajas-servicios .caja4 {
       width: 44.5vw;
       height: auto; }
-  .reviews .comentarios {
-    display: flex;
-    flex-flow: column;
-    align-items: center; }
-    .reviews .comentarios .opinion1, .reviews .comentarios .opinion2 {
-      width: 52.5%;
-      height: 50%; }
   .contact .container_contacto .name, .contact .container_contacto .lastname, .contact .container_contacto .email, .contact .container_contacto .tel, .contact .container_contacto .archivo, .contact .container_contacto .mensaje, .contact .container_contacto .position {
     width: 50vw; }
   .politicas .caja_politicas {
@@ -854,8 +768,6 @@ footer {
         .services .cajas-servicios .caja1 li, .services .cajas-servicios .caja2 li, .services .cajas-servicios .caja3 li, .services .cajas-servicios .caja4 li {
           font-size: 14px;
           line-height: 1.5; }
-  .reviews {
-    display: none; }
   .projects {
     padding-top: 50px;
     padding-bottom: 50px; }
