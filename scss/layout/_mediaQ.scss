@@ -75,6 +75,9 @@
             }
         }
     }
+    .ofertaLaboral {
+        width: 81%;
+    }
     .services {
         .text-services {
             width: 85%;
@@ -236,7 +239,16 @@
             }
         }
     }
+    .empresa {
+        .mision, .vision, .valores {
+            .about1, .about2, .about3 {
+                @include medidas (200px, 200px);
+                margin-bottom: 50px;
+            }
+        }
+    }
     .services {
+        padding-bottom: 80px;
         .text-services {
             width: 90vw;
         }
@@ -283,6 +295,20 @@
             }
         }
     }
+    .ofertaLaboral {
+        width: 80%;
+        h2 {
+            font-size: 18px;
+        }
+        h3, h4, p, li {
+            font-size: 14px;
+        }
+        .btn-dest {
+            a {
+                @include title (unset, center, 10px, $tipografia-principal, normal, 14px);
+            }
+        }
+    }
     footer {
         .info_footer {
             .contactos_footer {
@@ -324,10 +350,6 @@
     .about {
         padding-top: 100px;
         padding-bottom: 90px;
-        .item1 {
-            font-size: 10px;
-            letter-spacing: 2px;
-        }
         .item2 {
             font-size: 18px;
         }
@@ -346,16 +368,29 @@
             .btn-dest {
                 margin-top: 0;
                 a {
+                    font-size: 14px;
                     color: $color-secundario;
                 }
         }
     }
     }
+    .empresa {
+        @include flex (column, space-evenly, center);
+        padding-bottom: 20px;
+        .mision, .vision, .valores {
+            img {
+                @include medidas (80px, 80px);
+            }
+            .about1, .about2, .about3 {
+                @include medidas (280px, auto);
+                h2 {
+                    @include title (unset, center, 20px, $tipografia-principal, normal, 16px);
+                }
+            }
+        }
+    }
     .services {
         padding-bottom: 50px;
-        h2 {
-            font-size: 10px;
-        }
         h3 {
             font-size: 18px;
         }
@@ -384,9 +419,6 @@
     .projects {
         padding-top: 50px;
         padding-bottom: 50px;
-        h2 {
-            font-size: 10px;
-        }
         h3 {
             padding: 0px 20px;
             font-size: 18px;
@@ -421,9 +453,6 @@
     .contact {
         padding-top: 50px;
         padding-bottom: 50px;
-        h2 {
-            font-size: 10px;
-        }
         h3 {
             font-size: 18px;
         }
@@ -510,6 +539,19 @@
                         font-size: 12px;
                     }
                 }
+            }
+        }
+    }
+    .ofertaLaboral {
+        h2 {
+            font-size: 16px;
+        }
+        h3, h4, p, li {
+            font-size: 12px;
+        }
+        .btn-dest {
+            a {
+                @include title (unset, center, 10px, $tipografia-principal, normal, 12px);
             }
         }
     }

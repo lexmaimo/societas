@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Especialistas en el diseño, puesta en marcha y gerenciamiento de empresas hoteleras.">
-    <meta property="og:image" content="#" /> <!--imagen que ya figure en la web subida-->
     <meta property='og:description' content='Especialistas en el diseño, puesta en marcha y gerenciamiento de empresas hoteleras.' />
     <meta name="description" property="og:description" content="Especialistas en el diseño, puesta en marcha y gerenciamiento de empresas hoteleras.">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Societas - Management hotelero">
-    <meta property="og:url" content="https://www.societas.com.ar/">
+    <meta property="og:url" content="https://societas.com.ar/">
     <meta name="author" content="Alexandra Maimo">
     <meta name="copyright" content="Societas">
 
@@ -33,9 +32,17 @@
             <span class="navbar-toggler-icon burgerMenu"></span>
           </button>
           <div class="collapse navbar-collapse navBar" id="navbarNav">
-            <ul class="navbar-nav">              
-              <li class="nav-item">
-                <a class="nav-link mx-3" href="#nosotros">NOSOTROS</a>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NOSOTROS
+                </a>
+                <ul class="dropdown-menu dropNav">
+                  <li><a class="dropdown-item" href="#nosotros">QUIÉNES SOMOS</a></li>
+                  <li><a class="dropdown-item" href="#company">MISION</a></li>
+                  <li><a class="dropdown-item" href="#company">VISION</a></li>
+                  <li><a class="dropdown-item" href="#company">VALORES</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-3" href="#servicios">SERVICIOS</a>
@@ -44,7 +51,7 @@
                 <a class="nav-link mx-3" href="#proyectos">PROYECTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-3" href="pages/trabaja-con-nosotros.html" target="_blank">TRABAJÁ CON NOSOTROS</a>
+                <a class="nav-link mx-3" href="pages/oportunidades.html" target="_blank">TRABAJÁ CON NOSOTROS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-3" href="#contacto">CONTACTO</a>
@@ -55,24 +62,24 @@
       </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner"> <!-- banner -->
           <div class="titulo-banner">
             <h1>Societas | Management hotelero</h1>
             <p>El complemento para tu empresa</p>
           </div>
         </section>
-        <section class="about" id="nosotros">
-          <h2 class="item item1" data-aos="fade-down" data-aos-duration="1500">NOSOTROS</h2>
+        <section class="about" id="nosotros"> <!-- presentación de la empresa -->
           <h3 class="item item2" data-aos="fade-down" data-aos-duration="1500">¿QUIÉNES SOMOS?</h3>
           <div class="caja-about" data-aos="fade-right" data-aos-duration="1500">
             <div class="item item3">
-              <p> <span class="main_letter">S</span>omos un grupo de personas con una amplia experiencia en el rubro hotelero y de eventos gastronómicos, que conocemos toda la idiosincrasia de la industria, como así también el manejo de grupos de colaboradores de diversos tamaños. Nos especializamos en el diseño, puesta en marcha y gerenciamiento de empresas, trazando una alianza con los propietarios de los inmuebles.
+              <p>Somos una empresa de management hotelero con cobertura nacional, de amplia experiencia.
                 <br>
                 <br>
-                Hemos detectado que, a lo largo del tiempo, las empresas familiares comienzan a sufrir la falta de liderazgo por parte de los que esperamos que continúen el negocio con lo que comienzan diversas situaciones incómodas dentro del núcleo familiar. Con nuestra intervención en la gestión de empresas familiares hemos podido neutralizar estas diferencias entre los actores y así potenciar la rentabilidad del negocio.
+                Nos especializamos en el diseño, puesta en marcha y gerenciamiento de empresas, trazando una alianza con los propietarios de los inmuebles.
                 <br>
                 <br>
-                Hoy la hotelería es una industria, por lo que estamos convencidos de la necesidad de contar con procesos correctamente estructurados e implementados para poder tener una previsión y conocimiento real del negocio, minimizando las pérdidas e imprevistos.</p>
+                Potenciamos la rentabilidad del negocio con rapidez, eficacia y creatividad.
+              </p>
             </div>
             <div class="item item4"></div>
             <div class="btn-dest">
@@ -80,36 +87,50 @@
             </div>
           </div>
         </section>
-        <section class="services" id="servicios">
-          <h2 data-aos="fade-down" data-aos-duration="1500">NUESTROS SERVICIOS</h2>
+        <section class="empresa" id="company"> <!-- mision/vision/valores de la empresa -->
+          <div class="mision" data-aos="fade-right" data-aos-duration="1500"> <!-- mision -->
+              <img src="./assets/img/mision.png" alt="vector de flecha en el centro de un blanco" class="icon1">
+              <div class="about1">
+                  <h2>MISION</h2>
+                  <p>Asesorar a nuestros clientes, acompañándolos e implementando las mejores prácticas dentro de la industria.</p>
+              </div>
+          </div>
+          <div class="vision" data-aos="fade-right" data-aos-duration="1500"> <!-- vision -->
+              <img src="./assets/img/vision.png" alt="vector de una montaña con una bandera en la punta y un ojo que representa la visión" class="icon2">
+              <div class="about2">
+                  <h2>VISION</h2>
+                  <p>Ser reconocidos como la empresa líder de management hotelero de excelente calidad y servicio.</p>
+              </div>
+          </div>
+          <div class="valores" data-aos="fade-right" data-aos-duration="1500"> <!-- valores -->
+              <img src="./assets/img/valores.png" alt="diamante representando los valores" class="icon3">
+              <div class="about3">
+                  <h2>VALORES</h2>
+                  <p>Pasión, calidad, éxito y responsabilidad.</p>
+              </div>
+          </div>
+        </section>
+        <section class="services" id="servicios"> <!-- servicios ofrecidos -->
           <h3 data-aos="fade-down" data-aos-duration="1500">¿QUÉ OFRECEMOS?</h3>
           <div class="text-services" data-aos="fade-down" data-aos-duration="1500">
-            <p>Intervenimos en los procesos de gestión, maximizando las ventas y trabajando en la minimización de costos, determinando los competidores objetivos y analizando junto al propietario o director las mejores inversiones futuras, para priorizar el retorno de la inversión.
-              <br>
-              <br>
-              La hotelería es una industria muy prometedora y que muchas veces se subestima su complejidad a la hora de abrir un nuevo complejo turístico. Societas brinda el asesoramiento y acompañamiento durante los primeros meses de operación para garantizar la implementación de las mejores prácticas dentro de la industria.
-              <br>
-              <br>
-              Creemos que el mejor momento de contratar nuestro servicio es antes de empezar a proyectar el edificio. Es muy importante a la hora de crear un hotel conocer las características y tendencia mundial sobre tamaño de habitaciones, piscinas, amenities en general; como así también el tamaño de los sectores operativos, lavadero, office de piso, depósitos, salas de máquinas, etc.
-              <br>
-              <br>
-              Por último, consideramos que la administración de un hotel nace por la necesidad de sus dueños de desligarse por completo de la actividad, ya sea por tener un nuevo proyecto comercial a abordar, radicarse en otro destino o bien por un tema de salud que le imposibilite coordinar la operación.
-              <br>
-              <br>
-              Es teniendo todo esto en cuenta, que resumimos los principales puntos de nuestras propuestas:</p>
+            <ul>
+              <li>Maximizar la ganancia, rediseñando los procesos de gestión.</li>
+              <li>Determinar competidores objetivos.</li>
+              <li>Analizar, junto al propietario, inversiones futuras priorizando el retorno de la inversión.</li>
+            </ul>
           </div>
           <div class="cajas-servicios" data-aos="fade-down" data-aos-duration="1500">
             <div class="caja1">
               <img src="assets/img/gerenciamiento.png" alt="management" class="my-5">
               <h3>GERENCIAMIENTO</h3>
               <ul class="px-4">
-                <li><span class="main_word">Recurso</span> humano a disposición asignado completamente a la operación.</li>
+                <li><span class="main_word">Recurso</span> humano asignado a la operación.</li>
                 <br>
-                <li><span class="main_word">Equipo</span> remoto de ventas, quienes auditarán a los vendedores propios de la empresa.</li>
+                <li><span class="main_word">Equipo</span> remoto de ventas auditor.</li>
                 <br>
-                <li><span class="main_word">Diagrama</span> de tarifas ideal según análisis de competidores.</li>
+                <li><span class="main_word">Diagramación</span> de tarifas.</li>
                 <br>
-                <li><span class="main_word">Análisis</span> de la matriz de costos de la empresa para determinar oportunidades que permitan maximizar la rentabilidad.</li>
+                <li><span class="main_word">Análisis</span> de la matriz de costos de la empresa.</li>
                 <br>
                 <li><span class="main_word">Manejo</span> de redes sociales e imagen de la marca.</li>
                 <br>
@@ -126,15 +147,13 @@
               <ul class="px-4">
                 <li><span class="main_word">Contrato</span> comercial de alquiler por 3 años, asumiendo todos los riesgos de la operación.</li>
                 <br>
-                <li><span class="main_word">Diseño</span> de equipo completo de trabajo a cargo de Societas.</li>
+                <li><span class="main_word">Diseño</span> completo de equipo de trabajo.</li>
                 <br>
                 <li><span class="main_word">La operación</span> podrá ser con staff propio del hotel, o bien a cargo de Societas en base a la antigüedad de los empleados y acuerdo puntual.</li>
                 <br>
                 <li><span class="main_word">Manejo</span> integral del edificio, marca y recursos financieros de la empresa.</li>
                 <br>
-                <li><span class="main_word">Administración</span> de los recursos humanos antes de reclamos legales de cualquier tipo.</li>
-                <br>
-                <li><span class="main_word">Conocimiento</span> sobre requisitos de cumplimiento para AFIP y demás entes nacionales, provinciales o municipales que requieran cualquier tipo de documentación.</li>
+                <li><span class="main_word">Administración</span> de los recursos humanos ante reclamos legales.</li>
               </ul>
             </div>
             <div class="caja3">
@@ -151,30 +170,29 @@
                 <br>
                 <li><span class="main_word">Selección</span> de proveedores locales.</li>
                 <br>
-                <li><span class="main_word">Análisis</span> de los servicios ofrecidos por el hotel.</li>
+                <li><span class="main_word">Análisis</span> de los servicios ofrecidos por el establecimiento.</li>
               </ul>
             </div>
             <div class="caja4">
               <img src="assets/img/diseño de hoteleria.png" alt="bombilla con una idea" class="my-5">
               <h3>DISEÑO DE HOTELERÍA</h3>
               <ul class="px-4">
-                <li><span class="main_word">Análisis</span> de los servicios esenciales (agua, luz, gas) para determinar el tipo de calefacción y refrigeración del edificio.</li>
+                <li><span class="main_word">Estudio</span> de mercado.</li>
                 <br>
-                <li><span class="main_word">Determinación</span> del número ideal de habitaciones según ubicación del proyecto.</li>
+                <li><span class="main_word">Determinación</span>, en base al costo-beneficio, de los sistemas de calefacción y refrigeración del edificio.</li>
                 <br>
-                <li><span class="main_word">Análisis</span> de dependencias para guardado de sábanas, químicos, etc.</li>
+                <li><span class="main_word">Diseño</span> de dependencias para guardado de sábanas, químicos, etc.</li>
                 <br>
                 <li><span class="main_word">Layout</span> de cocheras; análisis del tránsito del pasajero dentro del edificio.</li>
                 <br>
                 <li><span class="main_word">Acompañamiento</span> a la empresa constructora durante el proceso.</li>
                 <br>
-                <li><span class="main_word">Acompañamiento</span> al propietario para la adquisición de mobiliario y demás necesidades antes de la puesta en marcha.</li>
+                <li><span class="main_word">Asesoramiento</span> al propietario para la adquisición de mobiliario y demás necesidades antes de la puesta en marcha.</li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="projects" id="proyectos">
-          <h2 data-aos="fade-down" data-aos-duration="1500">PROYECTOS DESARROLLADOS</h2>
+        <section class="projects" id="proyectos"> <!-- casos de éxito -->
           <h3 data-aos="fade-down" data-aos-duration="1500">¿QUIÉNES CONFÍAN EN NOSOTROS?</h3>
           <div class="caja-proyectos">
             <figure data-aos="fade-down" data-aos-duration="1500">
@@ -251,11 +269,10 @@
             </figure>
           </div>
         </section>
-        <section class="contact" id="contacto">
-          <h2 data-aos="fade-down" data-aos-duration="1500">CONTACTANOS</h2>
+        <section class="contact" id="contacto"> <!-- formulario de contacto -->
           <h3 data-aos="fade-down" data-aos-duration="1500">¿CÓMO ENCONTRARNOS?</h3>
           <div class="container_contacto" data-aos="fade-down" data-aos-duration="1500">
-            <form target="_blank" action="https://formsubmit.co/info@societas.com.ar" method="POST">
+            <form target="_blank" action="https://formsubmit.co/62962686eab030b21dd07e4f0bfcd497" method="POST">
               <div class="column1">
                 <div class="form-group">
                   <div class="form-row">
@@ -322,7 +339,7 @@
             <h3>Central de Reservas</h3>
             <p>reservas@societas.com.ar</p>
           </div>
-          <!--<a href="#">Oportunidades Laborales</a>-->
+          <a href="pages/oportunidades.html" target="_blank">Oportunidades Laborales</a>
           <a href="pages/trabaja-con-nosotros.html" target="_blank">Cargá tu CV</a>
         </div>
       </div>
@@ -336,5 +353,28 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+5493546538721',
+        'titleMessage' : 'Societas | Management hotelero',
+        'welcomeMessage': 'Gracias por comunicarte con Societas. ¿Cómo podemos ayudarte?',
+        'position' : 'right',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        },
+        'facebookPageId' : '',
+        'gcaEmailAddress' : '',
+        'gcaEmailSubject' : '',
+        'gcaInstagramUsername' : '',
+        'gcaTelegramUsername' : '',
+      });
+    });
+    </script>
 </body>
 </html>

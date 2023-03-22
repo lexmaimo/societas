@@ -48,15 +48,6 @@
 .about {
     padding-top: 50px;
     padding-bottom: 125px;
-    .item1 {
-        width: 100%;
-        grid-area: mini;
-        text-align: center;
-        font-family: $tipografia-principal;
-        font-size: 11px;
-        color: $color-boton;
-        letter-spacing: 2px;
-    }
     .item2 {
         width: 100%;
         grid-area: titulo;
@@ -109,19 +100,44 @@
         }
     }
 }
+/* company section */
+.empresa {
+    @extend %medidas;
+    background-color: $color-principal;
+    @include flex (row, space-evenly, center);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    .mision, .vision, .valores {
+        img {
+            @include medidas (100px, 100px);
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .about1, .about2, .about3 {
+            @include medidas (280px, 200px);
+            color: $color-secundario;
+            h2 {
+                background-color: $color-boton;
+                @include title (unset, center, 20px, $tipografia-principal, normal, 20px);
+            }
+            p {
+                background-color: $color-secundario;
+                color: $color-principal;
+                @include title (unset, center, 20px, $tipografia-principal, normal, 14px);
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
 /* services section */
 .services {
     background-color: $color-secundario;
     color: $color-principal;
     padding-top: 50px;
     padding-bottom: 100px;
-    h2 {
-        font-family: $tipografia-principal;
-        text-align: center;
-        font-size: 11px;
-        color: $color-boton;
-        letter-spacing: 2px;
-    }
     h3 {
         font-family: $tipografia-principal;
         text-align: center;
@@ -132,8 +148,10 @@
         width: 80%;
         margin: auto;
         margin-bottom: 50px;
-        font-family: $tipografia-principal;
-        font-size: 14px;
+        li {
+            font-family: $tipografia-principal;
+            font-size: 14px;
+        }
     }
     .cajas-servicios {
         @include medidas (80vw, auto);
@@ -182,14 +200,6 @@
                 font-weight: bold;
                 color: $color-secundario;
             }
-            p {
-                font-family: $tipografia-principal;
-                font-size: 16px;
-                font-weight: normal;
-                color: $color-secundario;
-                padding-bottom: 20px;
-                text-align: left;
-            }
             li {
                 font-family: $tipografia-principal;
                 font-size: 14px;
@@ -223,14 +233,6 @@
     color: $color-secundario;
     padding-top: 80px;
     padding-bottom: 100px;
-    h2 {
-        font-family: $tipografia-principal;
-        text-align: center;
-        font-size: 11px;
-        color: $color-boton;
-        font-weight: bold;
-        letter-spacing: 2px;
-    }
     h3 {
         font-family: $tipografia-principal;
         text-align: center;
@@ -480,5 +482,37 @@
             }
         }
 
+    }
+}
+.ofertaLaboral {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 25px;
+    font-family: $tipografia-principal;
+    color: $color-principal;
+    h2 {
+        font-size: 20px;
+    }
+    h3, h4, p, li {
+        font-size: 16px;
+    }
+    h3 {
+        margin-bottom: 25px;
+    }
+    .btn-dest {
+        margin-bottom: 25px;
+        @include flex (row, flex-start, center);
+        a {
+            @include title (unset, center, 10px, $tipografia-principal, normal, 16px);
+            text-decoration: none;
+            color: $color-secundario;
+            background-color: $color-boton;
+            &:hover {
+                background-color: $color-principal;
+                transition: all 500ms ease-out;
+            }
+        }
     }
 }
